@@ -42,7 +42,7 @@ const renderProfiles = () => {
     }).join("");
 
     console.log("state:", state);
-    averageAgeElement.innerText = `Average age: ${state.averageAge} years old`;
+    averageAgeElement.innerText = `Average age: ${(state.averageAge).toFixed(2)} years old`;
 }
 
 renderProfiles();
